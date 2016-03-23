@@ -58,7 +58,7 @@ typedef NS_ENUM(NSInteger, XBStatusBarStyle) {
 + (void)loading:(NSString *)msg image:(UIImage *)image style:(XBStatusBarStyle)style;
 
 //+ (void)showLogin:(NSString *)msg image:(NSString *)imageName style:(XBStatusBarStyle)style;
-+ (void)regist;
+//+ (void)regist;
 
 
 @end

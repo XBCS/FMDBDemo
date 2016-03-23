@@ -18,20 +18,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    //当没看见..写着玩的..
-    
-    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    
-    self.window.backgroundColor = [UIColor greenColor];
-
-    
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-
-    XBViewController *xbvc = [storyboard instantiateInitialViewController];
-    
-    self.window.rootViewController = xbvc;
-    
-    [self.window makeKeyAndVisible];
+//    //当没看见..写着玩的..
+//    
+//    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+//    
+//    self.window.backgroundColor = [UIColor greenColor];
+//
+//    
+//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+////    XBViewController *vc = [XBViewController alloc]initWithNibName:@"Main" bundle:<#(nullable NSBundle *)#>
+//    
+//    XBViewController *xbvc = [storyboard instantiateInitialViewController];
+//    
+//    NSLog(@"%@",xbvc);
+//    
+//    self.window.rootViewController = xbvc;
+//    
+//    [self.window makeKeyAndVisible];
     
     return YES;
 }

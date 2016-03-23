@@ -44,18 +44,27 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+   
+}
+
+
+
+#pragma -Mark - 监听事件
+/// 创建表
+- (IBAction)create:(id)sender {
     
     //访问修改数据库必须保证数据库是打开的,这样才能保证数据库的读写.
     //打开数据库,如果没有,会创建一个数据库.
     if (![self.db open]) {
-        NSLog(@"失败");
+        //        NSLog(@"失败");
+        [XBStatusBarHUD message:@"失败"];
         return;
     }
     
     // 拼接创建表的sql语句, 字段名与属性名一致.
     NSString *tableString = @"CREATE TABLE IF NOT EXISTS T_Person ('Id' INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, 'name' TEXT, 'age' INTEGER, 'height' REAL)";
     
-    // executeUpdate: 此方法用于创建, 更新, 插入..返回值代表成功与否
+    // executeUpdate: 此方法用于创建, 更新, 插入..返回值代表成功与否.
     BOOL isSuccess = [self.db executeUpdate:tableString];
     
     // 判断成功失败
@@ -65,13 +74,15 @@
     }
     
     // XBStatusBarHUD: 还未完成的小小指示器,会在statusBar弹出一个window显示提示内容.
-    [XBStatusBarHUD message:@"创表成功"];
+        [XBStatusBarHUD message:@"创表成功"];
 
+    
 }
 
-#pragma -Mark - 监听事件
+
 /// 保存/插入/添加按钮
 - (IBAction)saveButtonClick:(id)sender {
+    
 
    // 插入数据
     BOOL isSave = [self.db executeUpdate:@"INSERT INTO T_Person (name, age, height) VALUES (?, ?, ?)",self.name.text,self.age.text,self.height.text];
@@ -213,6 +224,8 @@
         Ivar ivar = ivars[i];
         
         const char *type = ivar_getTypeEncoding(ivar);
+        
+        NSLog(@"%s",type);
         
         NSString *typeOc = [[NSString stringWithUTF8String:type] substringWithRange:NSMakeRange(2, 11)];
         

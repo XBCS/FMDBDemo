@@ -87,7 +87,7 @@ static UIWindow *_window;
     
     [_window addSubview:btn];
     
-    [UIApplication sharedApplication];
+//    [UIApplication sharedApplication];
     
 
     [UIView animateWithDuration:0.5 animations:^{
@@ -109,7 +109,7 @@ static UIWindow *_window;
         
     }];
     
-    
+
     
 
 

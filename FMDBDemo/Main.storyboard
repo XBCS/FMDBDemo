@@ -79,6 +79,13 @@
                                     <action selector="criteriaqueriesButtonClick:" destination="7bc-lY-fBY" eventType="touchUpInside" id="4j6-98-duF"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYk-xo-YC4">
+                                <rect key="frame" x="278" y="204" width="45" height="30"/>
+                                <state key="normal" title="创建表"/>
+                                <connections>
+                                    <action selector="create:" destination="7bc-lY-fBY" eventType="touchUpInside" id="I2p-4F-lWB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -88,6 +95,7 @@
                             <constraint firstItem="bcw-uo-OmT" firstAttribute="top" secondItem="OfN-xH-Hyd" secondAttribute="bottom" constant="20" id="8fW-nk-hLv"/>
                             <constraint firstItem="bcw-uo-OmT" firstAttribute="centerX" secondItem="OfN-xH-Hyd" secondAttribute="centerX" id="BFD-h7-Z68"/>
                             <constraint firstItem="mEi-6x-1az" firstAttribute="centerY" secondItem="PMk-9y-wPN" secondAttribute="centerY" constant="-233" id="DSn-IT-Sjz"/>
+                            <constraint firstItem="vl3-R8-mhi" firstAttribute="top" secondItem="VYk-xo-YC4" secondAttribute="bottom" constant="20" id="EeM-U8-l1o"/>
                             <constraint firstItem="OfN-xH-Hyd" firstAttribute="top" secondItem="vl3-R8-mhi" secondAttribute="bottom" constant="20" id="Ftj-UA-5uR"/>
                             <constraint firstItem="gow-dg-lbP" firstAttribute="leading" secondItem="mEi-6x-1az" secondAttribute="trailing" constant="15" id="Ika-Q5-3H6"/>
                             <constraint firstItem="oxN-ua-7cL" firstAttribute="top" secondItem="bcw-uo-OmT" secondAttribute="bottom" constant="20" id="MC6-a9-7oD"/>
@@ -103,6 +111,7 @@
                             <constraint firstItem="OfN-xH-Hyd" firstAttribute="centerX" secondItem="vl3-R8-mhi" secondAttribute="centerX" id="jGr-Hi-Fg2"/>
                             <constraint firstItem="oxN-ua-7cL" firstAttribute="leading" secondItem="bcw-uo-OmT" secondAttribute="leading" id="lEa-N3-khV"/>
                             <constraint firstItem="oxN-ua-7cL" firstAttribute="centerX" secondItem="bcw-uo-OmT" secondAttribute="centerX" id="mkb-po-Ehx"/>
+                            <constraint firstItem="VYk-xo-YC4" firstAttribute="centerX" secondItem="vl3-R8-mhi" secondAttribute="centerX" id="nIp-pW-TL1"/>
                             <constraint firstItem="e19-da-Lzg" firstAttribute="centerY" secondItem="J7l-Ws-cwa" secondAttribute="centerY" id="yl5-ME-WIY"/>
                             <constraint firstItem="e19-da-Lzg" firstAttribute="leading" secondItem="J7l-Ws-cwa" secondAttribute="trailing" constant="15" id="zce-cQ-LLn"/>
                         </constraints>
