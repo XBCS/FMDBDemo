@@ -89,7 +89,7 @@
 
     // 判断成功与否
     if (!isSave) {
-        // 回顾一下 UIAlertView, UIAlertView在iOS_9.0过期. UIAlertController iOS_8.0开始
+        // UIAlertView, UIAlertView在iOS_9.0过期. UIAlertController iOS_8.0开始
         if ([UIDevice currentDevice].systemVersion.doubleValue >= 9.0) {
             
             UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"友情提示" message:@"保存失败" preferredStyle:UIAlertControllerStyleAlert];
@@ -271,7 +271,7 @@
     
     NSString * sql = [NSString stringWithFormat:@"%@;",[sqlM substringWithRange:range]];
     
-    
+    free(ivars);
     
     return sql;
 }
