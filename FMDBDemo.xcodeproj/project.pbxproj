@@ -21,7 +21,6 @@
 		C58210421C9F19BB00A77680 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C582103C1C9F19BB00A77680 /* Info.plist */; };
 		C58210441C9F19C800A77680 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C58210431C9F19C800A77680 /* libsqlite3.tbd */; };
 		C5FBDACF1C9F712100447397 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5FBDACE1C9F712100447397 /* Main.storyboard */; };
-		C5FBDAD41C9F7FA300447397 /* XBStatusBarHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C5FBDAD11C9F7FA300447397 /* XBStatusBarHUD.bundle */; };
 		C5FBDAD51C9F7FA300447397 /* XBStatusBarHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FBDAD31C9F7FA300447397 /* XBStatusBarHUD.m */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +50,6 @@
 		C582103C1C9F19BB00A77680 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C58210431C9F19C800A77680 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		C5FBDACE1C9F712100447397 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		C5FBDAD11C9F7FA300447397 /* XBStatusBarHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = XBStatusBarHUD.bundle; sourceTree = "<group>"; };
 		C5FBDAD21C9F7FA300447397 /* XBStatusBarHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBStatusBarHUD.h; sourceTree = "<group>"; };
 		C5FBDAD31C9F7FA300447397 /* XBStatusBarHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBStatusBarHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,7 +134,6 @@
 		C5FBDAD01C9F7FA300447397 /* XBStatusBarHUD */ = {
 			isa = PBXGroup;
 			children = (
-				C5FBDAD11C9F7FA300447397 /* XBStatusBarHUD.bundle */,
 				C5FBDAD21C9F7FA300447397 /* XBStatusBarHUD.h */,
 				C5FBDAD31C9F7FA300447397 /* XBStatusBarHUD.m */,
 			);
@@ -202,7 +199,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5FBDAD41C9F7FA300447397 /* XBStatusBarHUD.bundle in Resources */,
 				C58210421C9F19BB00A77680 /* Info.plist in Resources */,
 				C58210211C9F0E8A00A77680 /* LaunchScreen.storyboard in Resources */,
 				C582101E1C9F0E8A00A77680 /* Assets.xcassets in Resources */,

@@ -236,7 +236,7 @@
         
         const char *field = ivar_getName(ivar);
 
-//        NSLog(@"%s",field);
+
         
         NSString *fieldString = [[NSString stringWithUTF8String:field] substringFromIndex:1];
         
@@ -249,7 +249,7 @@
             continue;
         }
         
-//        NSLog(@"-----%@",value.text);
+
         
         [dictM setValue:value.text forKey:fieldString];
         
@@ -258,7 +258,7 @@
     NSMutableString *sqlM = [NSMutableString stringWithString:@"FROM T_Person WHERE "];
     
     [dictM enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-//        NSLog(@"key-%@: value-%@",key,obj);
+
         
         [sqlM appendFormat: @"%@ = '%@' AND ",key ,obj];
         
